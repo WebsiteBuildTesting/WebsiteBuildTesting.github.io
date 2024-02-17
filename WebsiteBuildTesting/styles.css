@@ -104,3 +104,8 @@ cite {
     border-radius: 5px;
     text-decoration: none;
 }
+
+/* Vendor prefixes */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    /* Chrome-specific styles */
+}
