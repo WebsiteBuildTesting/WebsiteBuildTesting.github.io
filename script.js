@@ -1,15 +1,15 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const logo = document.querySelector(".logo img");
-  const phoneNumberLink = document.querySelector(".contact-info a");
+// Functionality for logo click
+document.querySelector('.logo img').addEventListener('click', function() {
+  window.location.href = 'tel:+919740405218';
+});
 
-  // Redirect logo click to phone dialer
-  logo.addEventListener("click", function() {
-    window.location.href = "tel:+919740405218";
-  });
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
 
-  // Redirect phone number click to phone dialer
-  phoneNumberLink.addEventListener("click", function(event) {
-    event.preventDefault();
-    window.location.href = "tel:+919740405218";
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
   });
 });
