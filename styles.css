@@ -1,103 +1,98 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffa07a; /* Light apple red background color */
-    color: #fafad2; /* Lightest gold text color */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Building Company</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 24px; color: #000;">Welcome to Your Perfect Homestay Experience</h1>
+        <p style="font-size: 16px; color: #000;">Experience Comfort, Beauty, and Hospitality Like Never Before</p>
+    </header>
 
-header {
-    background-color: rgba(255, 255, 255, 0.7); /* Cherry white background color with transparency */
-    padding: 20px;
-    text-align: center;
-    position: relative;
-}
+    <section id="video">
+        <h2 style="font-size: 24px; color: #080;">CHECK ME OUT</h2>
+        <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5xw6pf1QpvU?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
 
-.logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
+    <section id="offers">
+        <h2 style="font-size: 24px; color: #211;">Our Offers</h2>
+        <div class="offer-slider">
+            <div class="offer">
+                <h3 style="font-size: 24px; color: #211;">Custom Room </h3>
+                <p style="font-size: 24px; color: #211;">We create stunning custom designs tailored to your brand.</p>
+            </div>
+            <div class="offer">
+                <h3 style="font-size: 24px; color: #211;">Mobile Responsive Development</h3>
+                <p style="font-size: 24px; color: #211;">Your website will look great on all devices, from desktops to smartphones.</p>
+            </div>
+            <div class="offer">
+                <h3 style="font-size: 24px; color: #211;">SEO Optimization</h3>
+                <p style="font-size: 24px; color: #211;">Improve your website's visibility and ranking on search engines.</p>
+            </div>
+            <div class="offer">
+                <h3 style="font-size: 24px; color: #211;">24/7 Customer Support</h3>
+                <p style="font-size: 24px; color: #211;">Get help whenever you need it, day or night.</p>
+            </div>
+        </div>
+    </section>
 
-.logo img {
-    width: 50px;
-}
+    <section id="testimonials">
+        <h2>Client Testimonials</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <blockquote>
+                    "Amazing service! Our new website exceeded our expectations."
+                    <cite>- John Doe, CEO of ABC Company</cite>
+                </blockquote>
+            </div>
+            <div class="testimonial">
+                <blockquote>
+                    "Professional and efficient team. Highly recommend!"
+                    <cite>- Jane Smith, Owner of XYZ Business</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
 
-header h1 {
-    font-size: 32px;
-    margin: 10px 0;
-}
+    <section id="cta">
+        <h2>Get Started</h2>
+        <p>Chat with us on WhatsApp to discuss your project.</p>
+        <a href="https://wa.me/919740405218?text=Hi,%20I'm%20interested%20in%20building%20a%20website" class="whatsapp-button" style="background-color: #25D366; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Chat Now</a>
+    </section>
 
-header p {
-    font-size: 18px;
-    margin: 10px 0;
-}
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Special Offer!</h2>
+            <p>Get 20% off on all website design packages for a limited time.</p>
+        </div>
+    </div>
 
-section {
-    padding: 20px;
-}
+    <footer>
+        <p>&copy; 2024 Website Building Company. All rights reserved.</p>
+    </footer>
 
-h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
+    <script>
+        // Popup script
+        document.addEventListener('DOMContentLoaded', function() {
+            var popup = document.getElementById('popup');
+            var closeButton = document.querySelector('.close');
 
-.offer-slider, .testimonial-slider {
-    display: flex;
-    overflow-x: auto;
-}
+            // Show popup
+            setTimeout(function() {
+                popup.style.display = 'block';
+            }, 5000); // 5 seconds
 
-.offer, .testimonial {
-    flex: 0 0 auto;
-    margin-right: 20px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* Cherry white background color with transparency */
-    border-radius: 10px;
-}
-
-#cta {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* Cherry white background color with transparency */
-    border-radius: 10px;
-}
-
-.whatsapp-button {
-    background-color: #25D366;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-/* Popup styles */
-.popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    z-index: 999;
-}
-
-.popup-content {
-    text-align: center;
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: #fff;
-    cursor: pointer;
-}
-
-footer {
-    background-color: rgba(255, 255, 255, 0.7); /* Cherry white background color with transparency */
-    color: #000; /* Black text color */
-    padding: 20px;
-    text-align: center;
-}
+            // Close popup
+            closeButton.addEventListener('click', function() {
+                popup.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
