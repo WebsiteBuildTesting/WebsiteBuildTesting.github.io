@@ -27,6 +27,13 @@ nav ul li {
     margin-right: 20px;
 }
 
+nav ul li.homestay-name a {
+    font-family: "Times New Roman", Times, serif; /* Example font */
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
 nav ul li a {
     text-decoration: none;
     color: white;
