@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const navMenu = document.getElementById("nav_menu");
-  const toggleBtn = document.getElementById("toggle_btn");
-  const closeBtn = document.getElementById("close_btn");
+  const logo = document.querySelector(".logo img");
+  const phoneNumberLink = document.querySelector(".contact-info a");
 
-  // Toggle navigation menu
-  toggleBtn.addEventListener("click", function () {
-    navMenu.classList.toggle("active");
+  // Redirect logo click to phone dialer
+  logo.addEventListener("click", function() {
+    window.location.href = "tel:+919740405218";
   });
 
-  // Close navigation menu
-  closeBtn.addEventListener("click", function () {
-    navMenu.classList.remove("active");
+  // Redirect phone number click to phone dialer
+  phoneNumberLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    window.location.href = "tel:+919740405218";
   });
 });
