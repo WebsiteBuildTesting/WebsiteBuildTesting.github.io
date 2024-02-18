@@ -6,7 +6,7 @@ body {
 
 header {
     background-color: #6e6d7a; /* Peacock feather color */
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,6 +16,18 @@ header {
     width: 100px;
 }
 
+.menu-toggle {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+nav {
+    display: none;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -23,31 +35,40 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li.homestay-name a {
-    font-family: "Times New Roman", Times, serif; /* Example font */
-    font-size: 24px;
-    color: white;
-    text-decoration: none;
+    margin-bottom: 10px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white;
-    font-size: 18px;
+    color: gold;
+    font-size: 16px;
 }
 
 section {
-    padding: 50px;
+    padding: 20px;
 }
 
 section h1 {
     margin-bottom: 20px;
+    color: gold;
 }
 
 .room, .offer {
     margin-bottom: 20px;
+}
+
+/* Responsive YouTube Video */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
